@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* , selects elements that don't match a list of selectors. For example, body:not(.home) selects an element that doesn't have the .home class */
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #6b240c;
+}
+
+#dict-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 90vmin;
+    padding: 80px 50px;
+    background-color: #994d1c;
+    border-radius: 10px;
+}
+
+#search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#search input[type="text"]{
+    color: #f5cca0;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    
+}
+
+#search input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #e48f45;
+    background-color: transparent;
+
+}
+
+#search ::placeholder {
+    color: #f5cca0;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+}
+
+#search button {
+    width: 25%;
+    padding: 15px;
+    background-color: #e48f45;
+    color: #f5cca0;
+    font-weight: 650;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+#word {
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#word h3 {
+    color: #f5cca0;
+    letter-spacing: 0.2em;
+}
+
+#word #audio {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: medium;
+    color: #f5cca0;
+}
+
+#details {
+    padding: 5px;
+    margin: 5px;
+}
+
+#details p {
+    display: inline-flex;
+    font-size: 16px;
+    color: #f5cca0;
+    letter-spacing: 0.2em;
+    gap: 10px;
+    margin: 5px 0 20px 0;
+
+
+}
+
+#word-meaning {
+    color: #f5cca0;
+    padding-bottom: 15px;
+    margin: 5px;
+}
+
+#word-example {
+    color: #f5cca0;
+    font-style: italic;
+    padding-left: 20px;
+    border-left: 7px solid #e48f45;
+    background-color:#e48f4547;
+    margin: 5px;
+}
+
+.subheadings {
+    color: #f5cca0;
+    font-weight: 600;
+}
