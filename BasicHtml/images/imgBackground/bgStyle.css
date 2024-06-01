@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    color: antiquewhite;
+}
+
+/*Using image to set background*/
+
+/*Using gradient to set background*/
+body{
+    height:100vh;
+    background-color: antiquewhite;
+    /*can use radial-gradient or, linear or conic gradient.  */
+    background-image: linear-gradient(rgb(3, 3, 131), rgb(187, 16, 144), rgb(253, 17, 174));/*to want repearing use repeating-conic-gradient()*/
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
