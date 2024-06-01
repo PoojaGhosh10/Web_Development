@@ -1,0 +1,16 @@
+.colorOrderedLists{
+    margin: 20px;
+    padding:40px;
+    /*
+    border: 2px solid black;*/
+    list-style-position: inside;
+    background-color: rgba(159, 94, 219, 0.856);
+}
+.colorOrderedLists li{
+    padding:4px;/*to space out between lists element provide margin.*/
+    /*
+    border: 2px solid white;
+    border-collapse: collapse;*/
+    background-color: rgba(229, 217, 240, 0.856);
+}
+
