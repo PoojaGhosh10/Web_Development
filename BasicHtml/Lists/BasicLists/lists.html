@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pooja Ghosh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listStyle.css">
+    <title>Lists</title>
+</head>
+
+<body>
+    <header>
+        <h1>Types of Lists</h1>
+        <p>Lists can be ordered or unordered. Images can also be used as lists.</p>
+    </header>
+    <main>
+        <section id="OrderedLists">
+            <!-- This is an example of lists.(ordered , unordered, description)-->
+            <!--ordered-->
+            <h3>Ordered list</h3>
+            <P>Fruits Name:</p>
+            <!--This is a default ordered list-->
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ol>
+            <!--ordered list mentioning specific list type such as lower or upper roman, lower or upper alpha, number.-->
+            <ol style="list-style-type:lower-roman">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ol>
+            <!--The ordered lists can be started from specific value and even in descending order.-->
+            <ol start="23" reversed>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ol>
+        </section>
+        <section id="UnorderedLists">
+            <h3>Unordered list</h3>
+            <P>Fruits Name:</p>
+            <!--This is a default unordered list-->
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+            <!--unordered list mentioning specific list type such as square, disc,-->
+            <ul style="list-style-type: square">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section id="Imagelists">
+            <h3>Images in Lists</h3>
+            <ul style="list-style-image: url('imgs/checkmark2.png')"">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/*The list-style-type property specifies the type of list item marker.
+Check in HTML ul list-style-image property
+list-style-type:none;
+margin:0;
+padding:0;*/
+
+/*positioning the list item markers.*/
+ul{
+    list-style-position: inside;/*can be outside too which is default.*/
+}
+/*The list-style property is a shorthand property. It is used to set all the list properties in one declaration:
+ul {
+    list-style: square inside url("sqpurple.gif");
+  }
+  */
