@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body{
+    background-color: rgba(252, 220, 182, 0.973);
+    position:relative;
+}
+nav{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    height: 100vh;
+    background-color:rgba(241, 171, 86, 0.973);
+    width:140px;
+    overflow: hidden;
+    transition: width 4s;
+}
+ul{
+    list-style-type: none;
+    padding:0px 20px 0px 0px; 
+}
+nav ul .nav-item{
+    text-align: center;
+}
+nav ul li {
+    padding: 10px;
+    text-align: left;
+}
+nav ul li a{
+    text-align: center;
+}
