@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type:none;
+    background-color:black;
+    color:white;
+    padding:2px;
+    height:60px;
+}
+ul li{
+    display:inline-block;
+    position:relative;
+}
+li{
+    display:block;
+}
+ul li .not-visible{
+    width:100%;
+    background-color: blueviolet;
+    position:absolute;
+    z-index:999;
+    display:none;
+}
