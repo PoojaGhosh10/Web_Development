@@ -1,0 +1,45 @@
+*{
+    /*removed browsers default settings*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Navbar{
+  background-color: rgba(0, 0, 0, 0.61);
+    width: 100vw;  
+}
+.Navbar ul{
+    list-style-type: none;
+    overflow: auto;
+}
+.Navbar li{
+    float:left;
+    padding: 4px 6px;
+    margin:10px;
+    text-align: center;
+
+}
+.Navbar li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 4px 6px;
+    text-align: center;
+}
+.Navbar li a:hover{
+    color:aquamarine;
+    background-color:rgb(23, 182, 129) ;
+}
+.Navbar .Search{
+    float:right;
+    padding: 4px 6px;
+    color:white;
+}
+.Navbar .Search input{
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    border-radius: 15px;
+    padding:4px 6px;
+    width:200px;
+    margin:10px;
+}
+
+
