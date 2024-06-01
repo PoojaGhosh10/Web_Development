@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*beginning of header part*/
+.nav-bar{
+    background-color: black;
+    color:white;
+    width:100vw;
+    height:55px;
+    padding:3px;
+}
+.nav-bar p{
+    padding:6px;
+    margin:4px;
+    font-size:25px;
+    font-weight: 700;
+    word-spacing: 3px;
+}
+/*The header part is designed already*/
+/*main*/
+.box {
+    /*properties for container -mostly used are these .donot mix with items properties.*/
+    border: 2px solid red;
+    /* most important part of flex starts here: flex default is row,  */
+    display: flex;
+    /* by mentioning display=flex we can now use the properties of flex. */
+    height: 100vh;/*provide in body*/
+    /* To center the content */
+    justify-content: center;
+    /* center is used the most */
+    /* flex-start,end; space-around,between; */
+    align-items: center;
+    /* align item properties are used in the container not for its items */
+    /* flex important properties */
+    /* flex-box items are not layed from left to right , they have flex direction. */
+    flex-direction: row;
+    /* flex default is row(left to right and if used reverse it will display items in reverse.) (row direction is known as main axis and column direction is known as cross axis. and changes if flex direction is column. justify-content center does according to main axis. */
+    flex-wrap: wrap;/*wrap-reverse.....rarely used and no-wrap is default*/
+    /*starts flowing out of container----make it column and check it*/
+    row-gap: 3px;
+    column-gap: 2px;
+
+}
+
+.box .box-items {
+    height: 110px;
+    width: 110px;
+    margin: 8px;
+    padding: 8px;
+    background-color: purple;
+    color: white;
+    border: 5px double black;
+    /*properties of flex-items*/
+
+    /*flex-item can be also declared as also flex */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

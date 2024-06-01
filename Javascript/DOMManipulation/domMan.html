@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!--Root Node-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .highlight {
+      color: white;
+      background-color: black;
+      padding: 10px;
+      width: 250px;
+      text-align: center;
+    }
+  </style>
+  <title>Document</title>
+</head><!--Here the text node is considered as first child not div bring div to same line to amke it first child-->
+
+<body><!--Parent node-->
+  <section><!--child node of body-->
+    <p><!--descendant node-->
+      Here we will add a link to the
+      <a href="https://www.mozilla.org/">Mozilla homepage</a>
+    </p>
+  </section>
+  <script>
+    const link = document.querySelector("a");
+    link.textContent = "Mozilla Developer Network";//to change the text written in the element.
+    link.href = "http://www.google.com";//to change the link
+    //query selector returns nodelist-array like structure.
+
+    // document.getElementById('myId')--> older method
+    const sect = document.querySelector("section");
+    const para = document.createElement("p");
+    para.textContent = "We hope you enjoyed";
+    sect.appendChild(para);//append at the end
+    const text = document.createTextNode("-the premier source for web development knowledge")
+    const linkPara = document.querySelector("p");
+    linkPara.appendChild(text);
+    linkPara.removeChild(text);
+    //css properties
+    // para.style.color="lightgreen";
+    // para.style.backgroundColor="darkgreen";
+    // para.style.padding="10px";//in element check in browser inline style has been added.
+    para.setAttribute("class", "highlight");
+  </script>
+</body>
+
+</html>
