@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+
+/*Utility classes*/
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/*end of utility classes*/
+.container {
+    background-color: blueviolet;
+    background-image: url("imagesForP/brown\ aesthetic\ wp.jpg");
+    background-repeat: repeat;
+    background-position: center;/*top right, bottom left and as such    ....try always after repeat */
+    background-size: cover;
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    gap: 30px;
+    /*when using container style use background-color here instead of heading*/
+    background-color: hsla(0, 0%, 0%, 0.226);
+    /*
+for background-images:
+    background-color: blueviolet;
+    background-image: url("imagesForP/brown\ aesthetic\ wp.jpg");
+    background-repeat: repeat;can be no-repeat
+    background-size: cover;
+    can check container for alternate.
+*/
+
+}
+
+.heading {
+    font-size: 500%;
+    color: aliceblue;
+    /*for text shadow x-axis y-axis blur-value color
+    text-shadow: 2px 2px 5px black;
+    background-color: hsla(0, 0%, 0%, 0.356);
+    padding: 0.25rem;
+    border-radius: 10px;
+    */
+    /* other option is use div one for text editing check container and hero*/
+}
+
+.profile-pic-img {
+    width: 35%;
+}
+
+.profile-pic-img img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double black;
+    border-radius: 50%;
+
+}

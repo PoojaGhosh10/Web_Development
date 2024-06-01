@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pooja Ghosh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleImg.css">
+    <title>ImagePractisewithCSS</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Trying to make a profile image..-->
+        <section class="hero">
+            <figure class="profile-pic-img">
+                <!--images are inline elements so a space after the image will be seen at the bottom because before when it was designed it was thought to be used with paragraph.  so set the image in css to be diplay: block;-->
+                <img src="imagesForP/aesthetic_brown2_wp.jpg" alt="Profile Picture" width="800" height="800"
+                    loading="lazy">
+                <figcaption class="offscreen">
+                    Pooja Ghosh
+                </figcaption>
+            </figure>
+            <h1 class="heading">
+                <span class="nowrap">Hello, I'm</span>
+                <span class="nowrap">Pooja Ghosh</span>
+            </h1>
+        </section>
+    </div>
+</body>
+
+</html>

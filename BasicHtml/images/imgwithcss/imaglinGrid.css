@@ -1,0 +1,26 @@
+/*setting the background for the whole body*/
+body {
+    background-color: rgb(14, 119, 211);
+    /*as a fallback if background image do not work out.*/
+    /*to left means darker to lighter ............add linear gradient along with transparent images putting comma ....*/
+    /*all the values for rest of the attribute in the form of entered order of image and gradient*/
+    background-image: linear-gradient(toleft, rgba(26, 26, 145, 0.781), steelblue, #ec1010);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+    /*shorthand for background:
+    background: repeat-y right center url(""), no-repeat linear-gradient(); also add size;    */
+}
+/*setting the background for the text*/
+h1 {
+    font-size: 200%;
+    font-weight: 400;
+    text-align: center;
+    background-image: url("imagesForP/brown\ aesthetic\ wp.jpg");
+    background-size: 100%;
+    text-transform: capitalize;
+    /*backgrount image to the text but the prefix for chrome is webkit , firefox do not need*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 0%, 0.116); /*can use"transparent"*/  
+}
