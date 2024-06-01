@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pooja Ghosh">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="listStyle.css">
+    <title>Examples of Links</title>
+</head>
+
+<body>
+    <header>
+        <h1>Different types of Links</h1>
+        <p>links can be used to go from one page to another. Images can also be used as a link. bookmarks using links.
+        </p>
+        <!--Nav can be used to reach the end section of the page after the page starts scrolling-->
+        <!--The nav menu can be created using link tags to reach the different section of the page.-->
+        <nav id="Nav-Menu">
+            <a href="#External and Internal Link">External and Internal Link</a><br>
+            <a href="#ImageLink">Image Link</a><br>
+            <a href="#End">Footer</a><br>
+            <a href="#FormAttributeValue">Form Type Attributes</a><br>
+            <a href="#ListLink">List Links</a><br>
+        </nav>
+    </header>
+    <main>
+        <section id="External and Internal Links">
+            <h3>
+                External and Internal Links
+            </h3>
+            <p>Links are used to go from one page to another.</p>
+            <!-- When giving a link name add short and descriptive name related to link othr than using click here(holds no meaning).(No sentence.)-->
+            <p>The external websites: </p>
+            <!--href refers to Hypertext Reference and target attribute can have _blank, _self, _top, _parent -->
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <p>The links belonging to same websites(relative urls): </p>
+            <a href="C:\Users\lenovo\OneDrive\Desktop\WebDevelopment\practise\index.html" target="_blank">Introduction
+                to HTML</a>
+        </section>
+        <br>
+        <hr><br>
+        <section id="ImageLink">
+            <h1>Images as Link</h1>
+            <figure id="italy">
+                <a href="https://thattravelista.com/italy-two-week-itinerary/" target="_blank"><img
+                        src="https://thumbs.dreamstime.com/z/colors-italy-series-manarola-village-cinque-terre-beautiful-liguria-75217180.jpg?ct=jpeg"
+                        alt="Trip to Italy" width="1000" height="800" loading="lazy"></a>
+                <figcaption>
+                    The best of Italy: Ultimate Two Week Italy Itinerary(14 Days)
+                </figcaption>
+            </figure>
+            <br>
+            <figure id="Greece">
+                <a href="https://www.lonelyplanet.com/articles/greece-10-day-itinerary" target="_blank"><img
+                        src="https://www.planetware.com/wpimages/2020/02/greece-in-pictures-beautfiul-places-to-photograph-santorini-oia.jpg"
+                        alt="trip to italy" width="1000" height="800"></a>
+                <figcaption>
+                    The best of Greece: Ultimate Two Week Greece Itinerary(14 Days)
+                </figcaption>
+            </figure><br>
+            <figure id="Egypt">
+                <a href="https://online-touregypt.com/" target="_blank"><img
+                        src="https://images.unsplash.com/photo-1664388519335-c3752b51efda?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Trip to Egypt" width="1000" height="700"></a>
+            
+            <figcaption>
+                The best of Egypt: Ultimate Two Week Egypt Itinerary(14 Days)
+            </figcaption>
+        </figure><br>
+        </section><hr>
+        <section id="FormAttributeValue">
+            <h3>Form Type Attributes</h3>
+            <!-- Though these methods are not preferred still just for knowledge purpose. later may learn forms which are safer to use.-->
+            <ul>
+                <li>Download an <a href="download"> download me</a></li>
+                <li>
+                    Contact me at <a href="mailto:random123@gmail.com">Email</a>
+                </li>
+                <li>Dial <a href="tel: +91 9955686941">My Phone</a></li>
+            </ul>
+        </section><hr>
+        <section id="ListLink">
+            <h3>List Links</h3>
+            <ul>
+                <li><a href="#receipe.html">Receipe</a></li>
+                <li><a href="#index.html">Index</a></li>
+                <li><a href="#about.html">About</a></li>
+            </ul>
+        </section><hr>
+    </main>
+    <footer id="End">
+        <a href="#Nav-Menu">Nav Section</a><br>
+        <p>&lt;&lt;&lt;&copy;<a href="index.html">Pooja Ghosh</a>&gt;&gt;&gt;</p>
+    </footer>
+</body>
+
+</html>
