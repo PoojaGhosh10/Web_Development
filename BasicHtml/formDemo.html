@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pooja Ghosh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Structure</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hello! Welcome.</h1>
+        <p>Tell me about yourself. I'd really like to hear from you!</p>
+        <p>Fill the form below to provide the information about you , your likes and dislikes.</p>
+    </header>
+
+    <main>
+        <form action="https://httpbin.org/get" method="get">
+            <!-- labels and inputs -->
+            <!--The value for label "for" and id in input element should be the same.
+            The autocomplete is used for sugegsting previous inputs.
+            the required attribute is used to make sure that the input for the element is entered.
+            The autofocus can be used only for one.-->
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="Jane " autocomplete="on" required="true"
+                    autofocus>
+                <label for="middleName">Middle Name: </label>
+                <input type="text" name="middleName" id="middleName" placeholder="Jane " autocomplete="on">
+                <label for="LastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Austen " autocomplete="on"
+                    required="true">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" placeholder="Enter your password " required="true">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com " autocomplete="on"
+                    required="true">
+                <label for="telephone">Phone NO: </label>
+                <input type="teL" name="telephone" id="telephone" placeholder="555-555-5555"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="true">
+                <label for="decade">Enter your fav decade: </label>
+                <input type="number" name="decade" id="decade" min="1950" max="2000" step="10" value="1980"
+                    required="true">
+                <!--Using once select and once input element for providing options to choose any one from the given one-->
+                <select name="coffee" id="coffee" multiple size="5">
+                    <optgroup label="coffees">
+                        <option value="iced"></option>
+                        <option value="hot chocolate" selected></option>
+                    </optgroup>
+                    <optgroup label="espressoss">
+                        <option value="latte"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                    </optgroup>
+
+                </select>
+                <!--Using input-->
+                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                    <optgroup label="coffees">
+                        <option value="iced"></option>
+                        <option value="hot chocolate" selected></option>
+                    </optgroup>
+                    <optgroup label="espressoss">
+                        <option value="latte"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                        <option value="americano"></option>
+                    </optgroup>
+
+                </datalist>
+
+                <!--Use of radio button and checkbox-->
+                <input type="radio" name="food" id="tacos">
+                <label for="tacos">Tacos</label>
+                <input type="radio" name="food" id="pizza">
+                <label for="pizza">Pizzas</label>
+                <input type="radio" name="food" id="pasta">
+                <label for="pasta">Pastas</label>
+                <input type="radio" name="food" id="rice">
+                <label for="rice">Rice</label>
+
+
+                <!--use of checkbox to select multiple items.-->
+                <input type="checkbox" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+                <input type="checkbox" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizzas</label>
+                <input type="checkbox" name="food" id="pasta" value="pasta">
+                <label for="pasta">Pastas</label>
+                <input type="checkbox" name="food" id="rice" value="rice">
+                <label for="rice">Rice</label>
+                <!--use of textarea for getting a message containing a long paragraph-->
+                <textarea name="message" id="message" cols="10" rows="20" placeholder="Enter your message"></textarea>
+                <!--use of submit attribute with button element-->
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+            </fieldset>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
