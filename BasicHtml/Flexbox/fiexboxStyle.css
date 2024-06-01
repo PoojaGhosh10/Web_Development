@@ -1,0 +1,55 @@
+.container {
+    /*properties for container -mostly used are these .donot mix with items properties.*/
+    border: 2px solid red;
+    /* most important part of flex starts here: flex default is row,  */
+    display: flex;
+    /* by mentioning display=flex we can now use the properties of flex. */
+    height: 80vh;
+    /* To center the content */
+    justify-content: center;
+    /* center is used the most */
+    /* flex-start,end; space-around,between; */
+    align-items: center;
+    /* align item properties are used in the container not for its items */
+    /* flex important properties */
+    /* flex-box items are not layed from left to right , they have flex direction. */
+    flex-direction: row-reverse;
+    /* flex default is row(left to right and if used reverse it will display items in reverse.) (row direction is known as main axis and column direction is known as cross axis. and changes if flex direction is column. justify-content center does according to main axis. */
+    flex-wrap: wrap;/*wrap-reverse.....rarely used and no-wrap is default*/
+    /*starts flowing out of container----make it column and check it*/
+    flex-flow:row row-reverse;/*direction  wrap...shorthand property*/
+    /*wraps down for example while using something in phone.*/
+    align-content: flex-start;/*when multiple lines try using it rather than aligh-items(for single line)*//*there is no justigy-items in flex-box*/
+
+    /*gap properties*/
+    gap:3px 4px;/*row-gap col-gap*/
+    row-gap: 3px;
+    column-gap: 2px;
+
+
+}
+
+.items {
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+    padding: 8px;
+    background-color: purple;
+    color: white;
+    border: 2px solid black;
+
+    /*properties of flex-items*/
+    flex-grow:1;
+
+
+}
+.order-1{
+    /*it is for flex-items*/
+    order:1;/*lesser the order -placed at start first*//*default-value is 0 so all of them will be placed before*/
+    flex-grow:25;/*if space is left after giving space to all items, it will take that left-over space*/
+    align-self:flex-end;/*to change a specific item.*/
+}
+.order-100{
+    order:100;
+    flex-shrink:20;/*ability to shrink when needed*/
+}
